@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lazy Mop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+    <div class="container">
+ <!--        <h1>Lazy Mop</h1> -->
+            <div id="chat-container">
+              <div id="chat-messages"></div>
+              <!-- <div class="starting-points">
+                  Starting points will be populated here by JavaScript
+              </div> -->
+              <div id="input-container">
+                <div class="input-wrapper">
+                    <input type="text" id="user-input" placeholder="Send a message...">
+                    <button onclick="handleUserInput()" id="send-button"><i class="fas fa-paper-plane"></i></button>
+                </div>
+                <button id="upload-image-button"><i class="fas fa-image"></i></button>
+                <button id="start-teachable-machine"><i class="fas fa-video"></i></button>
+                <input type="file" id="image-input" accept="image/*" style="display: none;">
+            </div>
+          </div>
+    <div id="teachable-machine-container" style="display: none;">
+        <div id="webcam-container"></div>
+        <div id="label-container"></div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
