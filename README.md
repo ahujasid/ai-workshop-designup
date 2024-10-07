@@ -1,4 +1,5 @@
-# This is a template for creating an AI personality, used in a workshop conducted at DesignUp Conference, 2024
+# Template for creating an AI personality
+Used in a workshop conducted at DesignUp Conference, 2024
 
 ### Usage instructions
 - Change bot personality in script.js
